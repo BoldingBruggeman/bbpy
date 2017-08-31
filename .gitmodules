@@ -10,3 +10,6 @@
 [submodule "editscenario"]
 	path = editscenario
 	url = https://github.com/BoldingBruggeman/editscenario.git
+[submodule "gotmgui"]
+	path = gotmgui
+	url = https://github.com/BoldingBruggeman/gotmgui.git
