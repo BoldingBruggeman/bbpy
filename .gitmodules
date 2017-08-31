@@ -1,0 +1,6 @@
+[submodule "xmlstore"]
+	path = xmlstore
+	url = https://github.com/BoldingBruggeman/xmlstore.git
+[submodule "xmlplot"]
+	path = xmlplot
+	url = https://github.com/BoldingBruggeman/xmlplot.git
