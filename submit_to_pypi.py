@@ -12,9 +12,10 @@ args = parser.parse_args()
 
 for path in glob.glob(args.dir):
     if os.path.isdir(path):
-        distdir = os.path.join(path, 'dist')
-        if os.path.isdir(distdir):
-            shutil.rmtree(distdir)
+        for tmpname in ('build', 'dist'):
+            tmpdir = os.path.join(path, tmpname)
+            if os.path.isdir(tmpdir):
+                shutil.rmtree(tmpdir)
         subprocess.check_call(['python', 'setup.py', 'bdist_wheel'], cwd=path)
         subprocess.check_call(['twine', 'upload', 'dist/*'], cwd=path)
 
