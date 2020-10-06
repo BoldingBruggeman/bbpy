@@ -13,3 +13,6 @@
 [submodule "gotmgui"]
 	path = gotmgui
 	url = https://github.com/BoldingBruggeman/gotmgui.git
+[submodule "pygotm"]
+	path = pygotm
+	url = https://github.com/BoldingBruggeman/pygotm.git
